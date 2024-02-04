@@ -14,4 +14,9 @@ spec:
         image: nginx:latest
         ports:
         - containerPort: 80
+ image: postgres:latest
+    environment:
+      POSTGRES_PASSWORD: examplepassword
+      POSTGRES_USER: exampleuser
+      POSTGRES_DB: exampledb
 
